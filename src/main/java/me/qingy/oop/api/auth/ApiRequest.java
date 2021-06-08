@@ -1,4 +1,4 @@
-package me.qingy.oop.api;
+package me.qingy.oop.api.auth;
 
 import lombok.Data;
 
