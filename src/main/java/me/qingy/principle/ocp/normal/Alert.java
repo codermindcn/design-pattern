@@ -26,7 +26,7 @@ public class Alert {
         if (errorCount > rule.getMatchedRule(api).getMaxErrorCount()) {
             notification.notify(NotificationEmergencyLevel.SEVERE, "...");
         }
-        // 请求超时数 需要添加参数 timeoutCount 和 if 判断
+        // 扩展：请求超时数 需要添加参数 timeoutCount 和 if 判断
         long timeoutTps = timeoutCount / durationOfSeconds;
         if (timeoutTps > rule.getMatchedRule(api).getMaxTimeoutTps()) {
             notification.notify(NotificationEmergencyLevel.URGENCY, "...");

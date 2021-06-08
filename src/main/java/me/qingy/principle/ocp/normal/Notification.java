@@ -7,6 +7,6 @@ package me.qingy.principle.ocp.normal;
  * @since 2021-06-08
  */
 public class Notification {
-    public void notify(Integer level, String s) {
+    public void notify(String level, String s) {
     }
 }

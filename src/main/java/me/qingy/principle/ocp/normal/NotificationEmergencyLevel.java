@@ -10,17 +10,17 @@ public class NotificationEmergencyLevel {
     /**
      * 严重
      */
-    public static final Integer SEVERE = 3;
+    public static final String SEVERE = "SEVERE";
     /**
      * 紧急
      */
-    public static final Integer URGENCY = 2;
+    public static final String URGENCY = "urgency";
     /**
      * 普通
      */
-    public static final Integer NORMAL = 1;
+    public static final String NORMAL = "normal";
     /**
      * 无关紧要
      */
-    public static final Integer TRIVIAL = 0;
+    public static final String TRIVIAL = "trivial";
 }
