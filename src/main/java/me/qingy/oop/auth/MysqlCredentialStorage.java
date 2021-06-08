@@ -1,4 +1,4 @@
-package me.qingy.oop.api.auth;
+package me.qingy.oop.auth;
 
 /**
  * @author qingy
