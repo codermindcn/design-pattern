@@ -12,7 +12,8 @@ public class DINotificationWithInterface {
         this.messageSender = messageSender;
     }
 
-    public void sendMessage(String cellphone, String message) { //... 省略校验逻辑等...
+    public void sendMessage(String cellphone, String message) {
+        //... 省略校验逻辑等...
         this.messageSender.send(cellphone, message);
     }
 
