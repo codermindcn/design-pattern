@@ -1,4 +1,4 @@
-package me.qingy.oop.ddd.normal;
+package me.qingy.oop.ddd.common.entity;
 
 import lombok.Data;
 

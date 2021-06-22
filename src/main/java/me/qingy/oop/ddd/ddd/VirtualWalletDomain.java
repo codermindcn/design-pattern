@@ -12,7 +12,7 @@ import java.math.BigDecimal;
  * @author qingy
  * @since 2021/6/7
  */
-public class VirtualWallet {
+public class VirtualWalletDomain {
     private Long id;
     private Long createTime = System.currentTimeMillis();
     private BigDecimal balance = BigDecimal.ZERO;
@@ -22,7 +22,7 @@ public class VirtualWallet {
     private BigDecimal frozenAmount = BigDecimal.ZERO;
 
 
-    public VirtualWallet(Long preAllocatedId) {
+    public VirtualWalletDomain(Long preAllocatedId) {
         this.id = preAllocatedId;
     }
 
@@ -30,7 +30,7 @@ public class VirtualWallet {
         return this.balance;
     }
 
-    public BigDecimal getAvaliableBalance() {
+    public BigDecimal getAvailableBalance() {
         BigDecimal totalAvailableBalance = this.balance.subtract(this.frozenAmount);
         if (isAllowedOverdraft) {
             totalAvailableBalance.add(this.overdraftAmount);
@@ -39,7 +39,7 @@ public class VirtualWallet {
     }
 
     public void debit(BigDecimal amount) {
-        BigDecimal totalAvailableBalance = getAvaliableBalance();
+        BigDecimal totalAvailableBalance = getAvailableBalance();
         if (totalAvailableBalance.compareTo(amount) < 0) {
             throw new InsufficientBalanceException();
         }

@@ -1,9 +1,9 @@
 package me.qingy.oop.ddd.normal;
 
-import me.qingy.oop.ddd.common.entity.Status;
+import me.qingy.oop.ddd.common.Status;
+import me.qingy.oop.ddd.common.entity.VirtualWalletEntity;
 import me.qingy.oop.ddd.common.entity.VirtualWalletTransactionEntity;
 import me.qingy.oop.ddd.common.exception.InsufficientBalanceException;
-import me.qingy.oop.ddd.common.entity.VirtualWalletBo;
 import me.qingy.oop.ddd.common.repository.VirtualWalletRepository;
 import me.qingy.oop.ddd.common.repository.VirtualWalletTransactionRepository;
 

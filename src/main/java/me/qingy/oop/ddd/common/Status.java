@@ -1,4 +1,4 @@
-package me.qingy.oop.ddd.common.entity;
+package me.qingy.oop.ddd.common;
 
 /**
  * @author qingy

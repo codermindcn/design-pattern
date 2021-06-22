@@ -1,6 +1,6 @@
 package me.qingy.oop.ddd.common.repository;
 
-import me.qingy.oop.ddd.normal.VirtualWalletEntity;
+import me.qingy.oop.ddd.common.entity.VirtualWalletEntity;
 
 import java.math.BigDecimal;
 

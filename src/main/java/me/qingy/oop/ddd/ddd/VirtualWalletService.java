@@ -1,6 +1,6 @@
 package me.qingy.oop.ddd.ddd;
 
-import me.qingy.oop.ddd.normal.VirtualWalletEntity;
+import me.qingy.oop.ddd.common.entity.VirtualWalletEntity;
 import me.qingy.oop.ddd.common.repository.VirtualWalletRepository;
 import me.qingy.oop.ddd.common.repository.VirtualWalletTransactionRepository;
 
@@ -14,9 +14,9 @@ public class VirtualWalletService {
     private VirtualWalletRepository walletRepo;
     private VirtualWalletTransactionRepository transactionRepo;
 
-    public VirtualWallet getVirtualWallet(Long walletId) {
+    public VirtualWalletDomain getVirtualWallet(Long walletId) {
         VirtualWalletEntity walletEntity = walletRepo.getWalletEntity(walletId);
-        VirtualWallet wallet = convert(walletEntity);
+        VirtualWalletDomain wallet = convert(walletEntity);
         return wallet;
     }
 
@@ -26,14 +26,14 @@ public class VirtualWalletService {
 
     public void debit(Long walletId, BigDecimal amount) {
         VirtualWalletEntity walletEntity = walletRepo.getWalletEntity(walletId);
-        VirtualWallet wallet = convert(walletEntity);
+        VirtualWalletDomain wallet = convert(walletEntity);
         wallet.debit(amount);
         walletRepo.updateBalance(walletId, wallet.balance());
     }
 
     public void credit(Long walletId, BigDecimal amount) {
         VirtualWalletEntity walletEntity = walletRepo.getWalletEntity(walletId);
-        VirtualWallet wallet = convert(walletEntity);
+        VirtualWalletDomain wallet = convert(walletEntity);
         wallet.credit(amount);
         walletRepo.updateBalance(walletId, wallet.balance());
     }
@@ -42,7 +42,7 @@ public class VirtualWalletService {
         //... 跟基于贫血模型的传统开发模式的代码一样...
     }
 
-    private VirtualWallet convert(VirtualWalletEntity walletEntity) {
+    private VirtualWalletDomain convert(VirtualWalletEntity walletEntity) {
         return null;
     }
 }
