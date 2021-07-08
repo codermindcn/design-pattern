@@ -16,11 +16,13 @@ public class DefaultApiAuthencatorImpl implements ApiAuthencator {
         this.credentialStorage = credentialStorage;
     }
 
+    @Override
     public void auth(String url) {
         ApiRequest apiRequest = ApiRequest.buildFromUrl(url);
         auth(apiRequest);
     }
 
+    @Override
     public void auth(ApiRequest apiRequest) {
         String appId = apiRequest.getAppId();
         String token = apiRequest.getToken();
