@@ -4,15 +4,15 @@ package me.qingy.oop.auth;
  * @author qingy
  * @since 2021/6/8
  */
-public class DefaultApiAuthencatorImpl implements ApiAuthencator {
+public class DefaultApiAuthenticatorImpl implements ApiAuthenticator {
 
     private CredentialStorage credentialStorage;
 
-    public DefaultApiAuthencatorImpl() {
+    public DefaultApiAuthenticatorImpl() {
         this.credentialStorage = new MysqlCredentialStorage();
     }
 
-    public DefaultApiAuthencatorImpl(CredentialStorage credentialStorage) {
+    public DefaultApiAuthenticatorImpl(CredentialStorage credentialStorage) {
         this.credentialStorage = credentialStorage;
     }
 
@@ -36,7 +36,7 @@ public class DefaultApiAuthencatorImpl implements ApiAuthencator {
         String password = credentialStorage.getPasswordByAppId(appId);
         AuthToken serverAuthToken = AuthToken.generate(originalUrl, appId, password, timestamp);
         if (!serverAuthToken.match(clientAuthToken)) {
-            throw new RuntimeException("Token verfication failed.");
+            throw new RuntimeException("Token verification failed.");
         }
     }
 
