@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * 即满足迪米特法则，又满足高内聚思想
  *
- * @see me.qingy.principle.srp.Serialization 单一职责中过度拆分违背高内聚的 Demo
+ * @see me.qingy.principle.solid.srp.Serialization 单一职责中过度拆分违背高内聚的 Demo
  * @author qingy
  * @since 2021-06-11
  */
