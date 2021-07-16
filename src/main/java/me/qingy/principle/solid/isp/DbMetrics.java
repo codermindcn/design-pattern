@@ -1,7 +1,5 @@
 package me.qingy.principle.solid.isp;
 
-import me.qingy.principle.solid.isp.Viewer;
-
 import java.util.Map;
 
 /**
