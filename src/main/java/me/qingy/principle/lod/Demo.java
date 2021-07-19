@@ -11,4 +11,5 @@ public class Demo {
     public Demo(Serializable serializer) {
         this.serializer = serializer;
     }
+    
 }
