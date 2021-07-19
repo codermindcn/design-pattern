@@ -1,4 +1,4 @@
-package me.qingy.principle.lop;
+package me.qingy.principle.lod;
 
 /**
  * @author qingy

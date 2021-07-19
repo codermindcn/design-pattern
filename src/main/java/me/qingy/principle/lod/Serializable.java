@@ -1,4 +1,4 @@
-package me.qingy.principle.lop;
+package me.qingy.principle.lod;
 
 import java.util.Map;
 

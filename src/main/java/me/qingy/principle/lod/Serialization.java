@@ -1,4 +1,4 @@
-package me.qingy.principle.lop;
+package me.qingy.principle.lod;
 
 import com.google.gson.Gson;
 
@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Map;
 
 /**
- * 即满足迪米特法则，又满足高内聚思想
+ * 即满足迪米特法则（隔离），又满足高内聚思想
  *
  * @see me.qingy.principle.solid.srp.Serialization 单一职责中过度拆分违背高内聚的 Demo
  * @author qingy
@@ -36,7 +36,6 @@ public class Serialization implements Serializable, Deserializable{
         String gsonStr = text.substring(IDENTIFIER_STRING.length());
         return gson.fromJson(gsonStr, Map.class);
     }
-
 
 }
 
