@@ -10,6 +10,8 @@ import java.net.UnknownHostException;
 import java.util.Random;
 
 /**
+ * v4 添加注释
+ *
  * Id Generator that is used to generate random IDs.
  *
  * <p>
