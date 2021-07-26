@@ -1,4 +1,4 @@
-package me.qingy.project.metrics;
+package me.qingy.project.metrics.v1;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

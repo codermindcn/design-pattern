@@ -1,4 +1,4 @@
-package me.qingy.project.metrics;
+package me.qingy.project.metrics.v1;
 
 import java.util.List;
 import java.util.Map;
