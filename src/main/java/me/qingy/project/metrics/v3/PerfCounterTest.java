@@ -11,6 +11,7 @@ import java.util.List;
  */
 
 public class PerfCounterTest {
+
     public static void main(String[] args) {
         ConsoleReporter consoleReporter = new ConsoleReporter();
         consoleReporter.startRepeatedReport(60, 60);
@@ -33,4 +34,5 @@ public class PerfCounterTest {
             e.printStackTrace();
         }
     }
+
 }

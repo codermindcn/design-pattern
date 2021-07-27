@@ -19,6 +19,7 @@ public class ConsoleReporter {
     private MetricsStorage metricsStorage;
     private Aggregator aggregator;
     private StatViewer viewer;
+
     private ScheduledExecutorService executor;
 
     public ConsoleReporter(MetricsStorage metricsStorage, Aggregator aggregator, StatViewer viewer) {

@@ -26,6 +26,7 @@ public class ConsoleReporter extends ScheduledReporter {
     public ConsoleReporter() {
         this(new RedisMetricsStorage(), new Aggregator(), new ConsoleViewer());
     }
+
     // 兼顾灵活性和代码的可测试性，这个构造函数继续保留
     public ConsoleReporter(MetricsStorage metricsStorage, Aggregator aggregator, StatViewer viewer) {
         super(metricsStorage, aggregator, viewer);

@@ -11,7 +11,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 最小原型
+ * 最小原型：统计用户注册、登录这两个接口的响应时间的最大值和平均值、接口调用次数，并且将统计结果以JSON 的格式输出到命令行中。
  *
  * @author qingy
  * @since 2021-07-19

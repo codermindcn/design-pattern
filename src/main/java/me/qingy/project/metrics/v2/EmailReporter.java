@@ -13,6 +13,7 @@ import java.util.*;
 public class EmailReporter {
 
     private static final Long DAY_HOURS_IN_SECONDS = 86400L;
+
     private MetricsStorage metricsStorage;
     private Aggregator aggregator;
     private StatViewer viewer;
@@ -40,8 +41,7 @@ public class EmailReporter {
                 long durationInMillis = DAY_HOURS_IN_SECONDS * 1000;
                 long endTimeInMillis = System.currentTimeMillis();
                 long startTimeInMillis = endTimeInMillis - durationInMillis;
-                Map<String, List<RequestInfo>> requestInfos =
-                        metricsStorage.getRequestInfos(startTimeInMillis, endTimeInMillis);
+                Map<String, List<RequestInfo>> requestInfos = metricsStorage.getRequestInfos(startTimeInMillis, endTimeInMillis);
                 Map<String, RequestStat> stats = aggregator.aggregate(requestInfos, durationInMillis);
                 viewer.output(stats, startTimeInMillis, endTimeInMillis);
             }
