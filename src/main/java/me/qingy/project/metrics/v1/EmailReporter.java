@@ -58,6 +58,11 @@ public class EmailReporter {
     }
 
     public static class EmailSender {
+        public EmailSender() {
+        }
+
+        public EmailSender(List<String> emailToAddresses) {
+        }
     }
 }
 
