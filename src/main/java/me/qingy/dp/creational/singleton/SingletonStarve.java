@@ -1,4 +1,4 @@
-package me.qingy.dp.creation.singleton;
+package me.qingy.dp.creational.singleton;
 
 /**
  * 饿汉式
