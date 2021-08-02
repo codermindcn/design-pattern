@@ -6,21 +6,21 @@ package me.qingy.principle.solid.ocp.normal;
  * @author qingy
  * @since 2021-06-08
  */
-public class NotificationEmergencyLevel {
+public enum NotificationEmergencyLevel {
     /**
      * 严重
      */
-    public static final String SEVERE = "severe";
+    SEVERE,
     /**
      * 紧急
      */
-    public static final String URGENCY = "urgency";
+    URGENCY,
     /**
      * 普通
      */
-    public static final String NORMAL = "normal";
+    NORMAL,
     /**
      * 无关紧要
      */
-    public static final String TRIVIAL = "trivial";
+    TRIVIAL;
 }
