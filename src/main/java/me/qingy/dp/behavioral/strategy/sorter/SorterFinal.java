@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 需求：对一个文件进行排序，文件中只包含整型数，并且，相邻的数字通过逗号来区隔。
+ *
  * @author qingy
  * @since 2021/8/5
  */
